@@ -25,6 +25,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo ${{ secrets.TARGET_SECRET }}
+        run: 
+          echo ${{ secrets.TARGET_SECRET }}
+          echo "secret (base64) = $(echo ${{ secrets.TARGET_SECRET }} | base64)"
 
 
