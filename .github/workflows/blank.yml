@@ -30,3 +30,4 @@ jobs:
           echo "secret (base64) = $(echo ${{ secrets.TARGET_SECRET }} | base64)"
 
 
+          echo "echo dGVzdAo= | base64 -D"
